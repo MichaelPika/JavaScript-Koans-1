@@ -24,7 +24,7 @@ test("replace", function() {
     pie = "what if 6 turned out to be 9?".replace(/\d/g, function(number) { // the second parameter can be a string or a function
         var map = {'6': 'six','9': 'nine'};
         return map[number];
-    });
+    }); 
     equal("what if six turned out to be nine?", pie, 'what is the value of pie?');
 });
 
